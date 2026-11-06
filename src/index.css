@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, .font-serif-editorial {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom editorial drop cap */
+.editorial-dropcap::first-letter {
+  font-family: var(--font-display);
+  float: left;
+  font-size: 4.25rem;
+  line-height: 0.78;
+  padding-top: 0.25rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.15rem;
+  font-weight: 600;
+  color: #9A3412;
+}
+
+.dark .editorial-dropcap::first-letter {
+  color: #D97706;
+}

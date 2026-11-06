@@ -1,0 +1,6 @@
+{
+  "name": "Литера — Акустическая Типографика на Rust",
+  "description": "Минималистичная студия акустической типографики, фонетического ритма и каденции текста с вычислительным ядром на Rust и WebAssembly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
