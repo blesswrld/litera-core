@@ -1,0 +1,11 @@
+[package]
+name = "litera-typography"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Knuth-Plass optimal paragraph line-breaking, optical kerning & margin protrusion tables, glyph em-width metrics, and classical page geometry canons."
+
+[lib]
+name = "litera_typography"
+path = "src/lib.rs"

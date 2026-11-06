@@ -1,0 +1,18 @@
+[package]
+name = "litera-wasm"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "WebAssembly (wasm32-unknown-unknown) C-ABI bridge, zero-dependency bump arena allocator, SWAR/SIMD UTF-8 scanner, and deterministic JSON wire serializer."
+
+[dependencies]
+litera-phonetics = { path = "../litera-phonetics" }
+litera-typography = { path = "../litera-typography" }
+litera-stylometry = { path = "../litera-stylometry" }
+litera-export = { path = "../litera-export" }
+
+[lib]
+name = "litera_wasm"
+path = "src/lib.rs"
+crate-type = ["cdylib", "rlib"]

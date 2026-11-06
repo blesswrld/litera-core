@@ -1,0 +1,14 @@
+[package]
+name = "litera-export"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Typesetting code generators for Typst (.typ), XeLaTeX/LuaLaTeX (memoir + microtype), and Vector SVG Galley Proofs."
+
+[dependencies]
+litera-typography = { path = "../litera-typography" }
+
+[lib]
+name = "litera_export"
+path = "src/lib.rs"

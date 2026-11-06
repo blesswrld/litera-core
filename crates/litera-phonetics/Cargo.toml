@@ -1,0 +1,11 @@
+[package]
+name = "litera-phonetics"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Acoustic-phonetic classification, Jespersen sonority sequencing, alliteration graphs, and Russian/English prosodic meter scanner."
+
+[lib]
+name = "litera_phonetics"
+path = "src/lib.rs"

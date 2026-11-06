@@ -1,0 +1,14 @@
+[package]
+name = "litera-stylometry"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "Quantitative literary stylometry, Shannon information entropy, Yule's K lexical richness, Burrows's Delta author attribution, and stochastic Markov prose synthesis."
+
+[dependencies]
+litera-phonetics = { path = "../litera-phonetics" }
+
+[lib]
+name = "litera_stylometry"
+path = "src/lib.rs"

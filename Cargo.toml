@@ -1,0 +1,24 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/litera-phonetics",
+    "crates/litera-typography",
+    "crates/litera-stylometry",
+    "crates/litera-export",
+    "crates/litera-wasm",
+    "rust-core",
+]
+
+[workspace.package]
+version = "0.4.0"
+edition = "2021"
+authors = ["Litera Acoustic Typography & Computational Typesetting Studio"]
+license = "Apache-2.0"
+repository = "https://github.com/blesswrld/litera-core"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
